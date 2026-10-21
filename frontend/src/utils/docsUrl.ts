@@ -1,4 +1,9 @@
-/** Public deployment of website-docs (VitePress, base `/docs/`). */
+/** Public deployment of website-docs (VitePress, base `/docs/`).
+ *
+ * luyin 品牌剥离决策（A8）：fork 不部署 website-docs，帮助链接暂指向
+ * WeKnora 官方文档（纯功能文档，非营销页）；luyin 内部文档站就绪后
+ * 替换此常量即可（单点修改，docsUrl.test.ts 不受影响）。
+ */
 export const DOCS_BASE_URL = 'https://weknora.weixin.qq.com/docs/'
 
 /**

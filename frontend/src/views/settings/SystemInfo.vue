@@ -22,6 +22,17 @@
 
     <!-- Content -->
     <div v-else class="settings-group">
+      <!-- Open-source attribution (luyin 品牌剥离 A7，MIT 合规要求) -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <label>产品信息</label>
+          <p class="desc">都会美家知识库 · 基于腾讯开源 WeKnora（MIT License）构建</p>
+        </div>
+        <div class="setting-control">
+          <span class="info-value">都会美家知识库</span>
+        </div>
+      </div>
+
       <!-- System version -->
       <div class="setting-row">
         <div class="setting-info">

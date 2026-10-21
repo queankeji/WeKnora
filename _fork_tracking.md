@@ -56,9 +56,16 @@
 
 | 文件路径 | 冲突原因（哪类改动） | 解决策略 |
 |---|---|---|
-| `deploy-luyin/`（values-luyin.yaml / networkpolicy.yaml / README.md） | 纯新增目录，不触碰上游文件 | rebase 天然零冲突；仅当上游 helm values 键名变更时人工核对覆盖键是否仍有效 |
+| `deploy-luyin/`（values-luyin.yaml / networkpolicy.yaml / README.md / model-setup.sh） | 纯新增目录，不触碰上游文件 | rebase 天然零冲突；仅当上游 helm values 键名变更时人工核对覆盖键是否仍有效 |
 | `.env`（本地起栈用） | 不入库（上游 .gitignore 已排除） | 无冲突风险 |
-| （其余暂无——尚未修改上游任何文件） | — | — |
+| `frontend/public/favicon.ico`、`frontend/src/assets/img/weknora.png` | 二进制同名替换（A1/A3，都会美家品牌） | rebase 时二进制冲突直接取 ours；上游若换原图需评估是否保留我方品牌图 |
+| `frontend/index.html` | title/keywords/description 字符串改动（A2） | 上游低频改动；冲突时保留我方 meta 块，合并上游脚本部分 |
+| `config/builtin_agents.yaml` | 助手显示名改「都会美家助手」（A9，id 未动） | 上游低频改动；冲突时以功能配置为准、显示名取 ours |
+| `frontend/src/views/auth/Login.vue` | 移除官网/GitHub header 外链、logo 链接中性化（A5） | **上游常改页面，冲突热点**；rebase 时重放"删外链块"语义而非照搬上下文 |
+| `frontend/src/components/UserMenu.vue` | 移除 GitHub 菜单项及 openGithub（A6） | 上游常改组件，冲突热点；同上语义重放 |
+| `frontend/src/views/settings/SystemInfo.vue` | 新增产品信息署名行（A7，「基于腾讯开源 WeKnora (MIT)」合规） | 我方为纯新增行，冲突概率低 |
+| `frontend/src/utils/docsUrl.ts` | 仅注释变更，URL 保留（A8 决策：内部文档站就绪后单点替换） | 冲突概率极低 |
+| （其余暂无——未修改上游其他文件） | — | — |
 
 ---
 
@@ -76,8 +83,8 @@
 
 ### 品牌剥离实施状态
 
-- A1（favicon）/A3（logo 图）同名替换：**待用户提供品牌资产（logo/产品名）后实施**，无素材不启动（见 /Users/shi/Desktop/luyin/tmp/weknora_brand_checklist.md）。
-- 其余 A 区项（A2/A5-A9）在品牌资产到位后与 A1/A3 一并实施，届时逐项登记冲突热点清单。
+- **A 区已于 2026-10-22 落地**（任务 #9，品牌名「都会美家知识库」，logo 方案 A·藏青金·书页屋形）：A1/A3 图片同名替换（favicon.ico 多尺寸 16/32/48/64 + weknora.png 400x126 同尺寸）、A2 index.html 标题/meta、A5 Login.vue 外链收敛、A6 UserMenu.vue GitHub 菜单移除、A7 SystemInfo.vue 署名行（MIT 合规）、A9 builtin_agents.yaml 助手名、A8 docsUrl.ts 仅注释（URL 暂指 WeKnora 官方文档，内部文档站就绪后单点替换）。i18n 复核零品牌字样（与清单结论一致）。全部触碰文件已登记上方冲突热点清单。
+- 其余 A 区项（A2/A5-A9）在品牌资产到位后与 A1/A3 一并实施，届时逐项登记冲突热点清单。 ← 已完成，见上
 
 ### 禁止事项
 
