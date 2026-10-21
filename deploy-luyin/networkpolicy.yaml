@@ -1,0 +1,93 @@
+# =====================================================================
+# luyin 知识引擎网络收口（namespace: knowledge-engine）
+# ---------------------------------------------------------------------
+# 原则：fork 引擎不直接对租户暴露，唯一可信调用方是 luyin api-server（BFF）。
+# 应用方式：kubectl apply -f deploy-luyin/networkpolicy.yaml
+# 前提：集群 CNI 支持 NetworkPolicy（Calico/Cilium 等；flannel 不生效）。
+#
+# 本文件是 fork 定制区新增文件（不修改上游），rebase 零冲突。
+# Pod 标签与上游 helm chart 的 componentSelectorLabels 对齐：
+#   app.kubernetes.io/name=weknora, app.kubernetes.io/instance=weknora,
+#   app.kubernetes.io/component=<app|frontend|docreader|postgresql|redis>
+# （release 名固定为 weknora 时 fullname=weknora；改 release 名需同步本文件）
+# =====================================================================
+---
+# 1) 默认拒绝全部入站（namespace 内所有 Pod）
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: weknora-default-deny-ingress
+  namespace: knowledge-engine
+spec:
+  podSelector: {}          # 选中 namespace 内全部 Pod
+  policyTypes:
+    - Ingress
+  ingress: []              # 空列表 = 全部拒绝
+---
+# 2) 仅允许 luyin api-server（BFF，namespace: luyin-main）访问 app:8080
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: weknora-allow-luyin-bff
+  namespace: knowledge-engine
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: weknora
+      app.kubernetes.io/instance: weknora
+      app.kubernetes.io/component: app
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: luyin-main
+      ports:
+        - protocol: TCP
+          port: 8080
+---
+# 3) 引擎内部互访（app→postgres/redis/docreader，frontend→app）
+#    仅放行同 namespace 且带 weknora part-of 标签的 Pod
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: weknora-allow-internal
+  namespace: knowledge-engine
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/part-of: weknora
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app.kubernetes.io/part-of: weknora
+---
+# 4)（可选，默认启用）Prometheus 黑盒探测 /health 与后续 exporter 抓取。
+#    监控栈所在 namespace 若不是 "monitoring"，改下方 metadata.name 值后重 apply。
+#    WeKnora app 当前无原生 /metrics 端点，Prometheus 层面以 /health 探活
+#    + 容器/K8s 基础指标为主（详见 deploy-luyin/README.md 可观测章节）。
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: weknora-allow-monitoring
+  namespace: knowledge-engine
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: weknora
+      app.kubernetes.io/instance: weknora
+      app.kubernetes.io/component: app
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: monitoring
+      ports:
+        - protocol: TCP
+          port: 8080

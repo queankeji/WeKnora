@@ -1,0 +1,119 @@
+# =====================================================================
+# luyin 知识引擎（WeKnora fork）Helm 覆盖值
+# ---------------------------------------------------------------------
+# 用法（基于仓库根 helm/ chart，详见同目录 README.md）：
+#   helm upgrade --install weknora ./helm \
+#     -n knowledge-engine --create-namespace \
+#     -f deploy-luyin/values-luyin.yaml
+#
+# 本文件是 fork 定制区新增文件（不修改上游 helm/），rebase 零冲突。
+# 基线：上游 e28c68cf5 / v0.8.3（Chart.appVersion = v0.8.3）
+# =====================================================================
+
+# ---- 镜像：锁定 0.8.3（与 fork 基线一致；升级须走季度 rebase 流程）----
+app:
+  # data-files PVC 为 ReadWriteOnce，多副本滚动更新会 Multi-Attach 报错，
+  # 知识引擎单副本 + Recreate 是当前架构（BFF 收口）下的既定选择。
+  strategy:
+    type: Recreate
+  replicaCount: 1
+  image:
+    repository: wechatopenai/weknora-app
+    tag: "v0.8.3"
+  # 知识引擎独占节点预算下的保守值；问答高峰（BFF 聚合后）再按监控调优
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: "2"
+      memory: 4Gi
+  env:
+    GIN_MODE: release
+    RETRIEVE_DRIVER: postgres
+    STORAGE_TYPE: local
+    TZ: Asia/Shanghai
+    # 生产关闭公开注册：业务用户一律经 luyin BFF API Key，不直连注册
+    DISABLE_REGISTRATION: "true"
+
+frontend:
+  replicaCount: 1
+  image:
+    repository: wechatopenai/weknora-ui
+    tag: "v0.8.3"
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 200m
+      memory: 256Mi
+
+docreader:
+  replicaCount: 1
+  image:
+    repository: wechatopenai/weknora-docreader
+    tag: "v0.8.3"
+  # 解析是最重的环节（PDF 渲染/OCR），request 给足避免 BestEffort 调度后被驱逐
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: "2"
+      memory: 4Gi
+
+postgresql:
+  # 注意：上游 chart 默认 paradedb v0.18.9-pg17，此处对齐 0.8.3
+  # docker-compose.yml 实际使用的 v0.25.11-pg17（含 pgvector 半向量等新特性）
+  image:
+    repository: paradedb/paradedb
+    tag: v0.25.11-pg17
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: "2"
+      memory: 4Gi
+  persistence:
+    enabled: true
+    size: 50Gi
+
+redis:
+  image:
+    repository: redis
+    tag: 7.0-alpine
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+  persistence:
+    enabled: true
+    size: 5Gi
+
+dataFiles:
+  persistence:
+    enabled: true
+    size: 50Gi
+
+# ---- 入口：不建 Ingress —— 引擎仅对 luyin api-server（BFF）暴露，
+#      BFF 经 ClusterIP Service 直连（同集群），网络层由
+#      deploy-luyin/networkpolicy.yaml 收口 ----
+ingress:
+  enabled: false
+
+# ---- 密钥：不落 values 文件，统一走外部 Secret（见 README.md 第 2 步）----
+secrets:
+  existingSecret: weknora-secrets
+
+# ---- 可选组件：默认全部关闭（M0 阶段最小栈）----
+minio:
+  enabled: false
+neo4j:
+  enabled: false
+qdrant:
+  enabled: false
