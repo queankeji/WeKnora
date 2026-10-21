@@ -177,3 +177,36 @@ spec:
    出站不受影响；若集群有全局出站策略（egress deny），需为 app 放行模型厂商 API 域名。
 4. **SYSTEM_AES_KEY**：32 字节硬性要求 + 丢失不可恢复（见第 2 步警告）。
 5. **release 名与标签耦合**：networkpolicy.yaml 的 selector 绑定 release 名 `weknora`。
+
+## 本地栈运维手册
+
+### 前端重建（品牌改动后必读）
+
+改 `frontend/` 源码后需要重建 UI 镜像才能在 :8081 看到。本地开发机有三个环境坑，
+完整命令序列（三者缺一不可）：
+
+```bash
+cd /Users/shi/Desktop/WeKnora && \
+BUILDX_CONFIG=/tmp/buildx-cfg \
+http_proxy=http://127.0.0.1:7897 https_proxy=http://127.0.0.1:7897 \
+docker compose build frontend && \
+docker compose up -d --force-recreate frontend
+```
+
+1. **buildx activity TCC 拦截**：默认 `~/.docker/buildx/activity/` 的状态文件 rename
+   会被沙箱/security 拦截（`operation not permitted`），用 `BUILDX_CONFIG=/tmp/buildx-cfg`
+   指到临时配置目录绕开。
+2. **基础镜像拉取代理**：直连 docker.io 被 DNS 污染，62413 端口代理返回 Bad Gateway；
+   必须显式 `http_proxy=http://127.0.0.1:7897`（与 git push 同款代理）。
+3. **验证**：`curl -sS http://localhost:8081/ | grep title` 应为「都会美家知识库」。
+
+### 模型 key 运维（占位 → 真实 key）
+
+- 配置三件套见 `model-setup.sh`（幂等可重放：登录→建模型→debug 验证）。
+- key 从不入库：真实 key 存宿主机 `luyin/tmp/wenknora`（不入 git），用
+  `PUT /api/v1/models/{id}/credentials` 逐模型注入，服务器只回 `configured:true`。
+- **默认 chat 模型坑**：裸调 `POST /knowledge-chat/{sid}`（不带 `summary_model_id`）的
+  fallback 取 ListModels **无序结果**的第一个 KnowledgeQA 模型（PG heap order，
+  不读 `is_default`）。行更新（含 PUT credentials）会使 tuple 后移、顺序翻转。
+  生产语义要求"默认路径必须是活的"：确保可用 key 的模型排在前面，或在请求里显式
+  带 `summary_model_id`；根治需 fork 补丁（fallback 优先 `is_default`），排期 M1。
