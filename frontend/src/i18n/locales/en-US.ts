@@ -6854,8 +6854,8 @@ export default {
       wait_agent: 'Wait for agent',
       openPage: 'Open page',
       viewPage: 'View page',
-      searchDuhuimeijia KBDocs: 'Search product docs',
-      readDuhuimeijia KBDoc: 'Read product doc',
+      searchDuhuimeijiaKBDocs: 'Search product docs',
+      readDuhuimeijiaKBDoc: 'Read product doc',
       readPage: 'View page',
       selectTab: 'Select tab',
       fillPage: 'Fill page'

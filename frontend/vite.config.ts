@@ -89,6 +89,12 @@ function pdfJsWasmAssets(): Plugin {
 }
 
 export default defineConfig({
+  // 预处理器禁用 worker 线程池（preprocessorMaxWorkers: 0 走同步 fake-worker 路径）。
+  // 受限/无子线程权限的构建环境里，less/scss 的 worker RPC 会报
+  // "connect failed: Connection refused" 而中断构建；同步路径结果一致。
+  css: {
+    preprocessorMaxWorkers: 0,
+  },
   define: {
     __FRONTEND_VERSION__: JSON.stringify(FRONTEND_VERSION),
     __FRONTEND_COMMIT__: JSON.stringify(FRONTEND_COMMIT),

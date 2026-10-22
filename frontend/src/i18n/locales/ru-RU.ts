@@ -2070,8 +2070,8 @@ export default {
       wait_agent: 'Ожидать агента',
       openPage: 'Открыть страницу',
       viewPage: 'Просмотр страницы',
-      searchDuhuimeijia KBDocs: 'Поиск в документации',
-      readDuhuimeijia KBDoc: 'Чтение документации',
+      searchDuhuimeijiaKBDocs: 'Поиск в документации',
+      readDuhuimeijiaKBDoc: 'Чтение документации',
       readPage: 'Просмотр страницы',
       selectTab: 'Выбор вкладки',
       fillPage: 'Заполнение страницы'

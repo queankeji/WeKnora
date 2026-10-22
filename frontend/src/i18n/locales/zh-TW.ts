@@ -2072,8 +2072,8 @@ export default {
       wait_agent: '等待智慧體',
       openPage: '開啟頁面',
       viewPage: '查看頁面',
-      search都会美家知识库Docs: '搜尋產品文件',
-      read都会美家知识库Doc: '閱讀產品文件',
+      searchDuhuimeijiaKBDocs: '搜尋產品文件',
+      readDuhuimeijiaKBDoc: '閱讀產品文件',
       readPage: '查看目前頁面',
       selectTab: '切換標籤',
       fillPage: '填寫頁面'

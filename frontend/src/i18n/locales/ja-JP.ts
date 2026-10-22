@@ -6854,8 +6854,8 @@ export default {
       wait_agent: 'エージェントを待機',
       openPage: 'ページを開く',
       viewPage: 'ページを確認',
-      searchDuhuimeijia KBDocs: '製品ドキュメントを検索',
-      readDuhuimeijia KBDoc: '製品ドキュメントを読む',
+      searchDuhuimeijiaKBDocs: '製品ドキュメントを検索',
+      readDuhuimeijiaKBDoc: '製品ドキュメントを読む',
       readPage: 'ページを確認',
       selectTab: 'タブを選択',
       fillPage: 'ページに入力'

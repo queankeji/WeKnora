@@ -2072,8 +2072,8 @@ export default {
       wait_agent: '等待智能体',
       openPage: '打开页面',
       viewPage: '查看页面',
-      search都会美家知识库Docs: '搜索产品文档',
-      read都会美家知识库Doc: '阅读产品文档',
+      searchDuhuimeijiaKBDocs: '搜索产品文档',
+      readDuhuimeijiaKBDoc: '阅读产品文档',
       readPage: '查看当前页面',
       selectTab: '切换标签',
       fillPage: '填写页面'

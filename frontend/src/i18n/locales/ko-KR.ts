@@ -2070,8 +2070,8 @@ export default {
       wait_agent: '에이전트 대기',
       openPage: '페이지 열기',
       viewPage: '페이지 확인',
-      searchDuhuimeijia KBDocs: '제품 문서 검색',
-      readDuhuimeijia KBDoc: '제품 문서 읽기',
+      searchDuhuimeijiaKBDocs: '제품 문서 검색',
+      readDuhuimeijiaKBDoc: '제품 문서 읽기',
       readPage: '페이지 보기',
       selectTab: '탭 선택',
       fillPage: '페이지 입력'
