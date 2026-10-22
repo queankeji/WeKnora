@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/im"
+	"github.com/duhuimeijia/kb-engine/internal/im"
 	slacklib "github.com/slack-go/slack"
 	"github.com/stretchr/testify/require"
 )

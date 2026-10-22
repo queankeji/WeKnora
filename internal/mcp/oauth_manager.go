@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 	"github.com/mark3labs/mcp-go/client/transport"
 	"github.com/redis/go-redis/v9"
 )

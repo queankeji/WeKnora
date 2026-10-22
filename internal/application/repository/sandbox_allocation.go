@@ -9,9 +9,9 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 
-	"github.com/Tencent/WeKnora/internal/sandbox/workspace"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/workspace"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // errWebUserDeleted means the canonical web user row is already soft-deleted.

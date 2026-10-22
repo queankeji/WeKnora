@@ -7,11 +7,11 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Tencent/WeKnora/internal/infrastructure/docparser"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/models/asr"
-	"github.com/Tencent/WeKnora/internal/sourceloc"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/infrastructure/docparser"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/models/asr"
+	"github.com/duhuimeijia/kb-engine/internal/sourceloc"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // attachStructureBlocks gives a parse result source blocks when the parser

@@ -4,7 +4,7 @@ import (
 	"slices"
 	"testing"
 
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 func TestIsValidFileTypeHTML(t *testing.T) {

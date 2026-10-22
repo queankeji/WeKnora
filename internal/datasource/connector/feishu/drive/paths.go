@@ -3,9 +3,9 @@ package drive
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/datasource/connector/feishu/core"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource/connector/feishu/core"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // This file implements the P1 directory mapping for the Drive connector:

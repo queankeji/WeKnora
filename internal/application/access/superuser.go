@@ -3,8 +3,8 @@ package access
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/config"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/config"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // IsCrossTenantSuperuser reports whether the caller's user attribute and the

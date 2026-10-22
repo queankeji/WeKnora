@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/agent/skills"
-	"github.com/Tencent/WeKnora/internal/sandbox"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/agent/skills"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // ReadFileTool exposes one read operation over capability-scoped sources.

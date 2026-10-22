@@ -3,7 +3,7 @@ package hitl
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 type delegationKey struct{}

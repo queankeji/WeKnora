@@ -6,10 +6,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/config"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/runtime"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/config"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // AuditLogRetentionRunner sweeps audit_logs once a day, deleting rows

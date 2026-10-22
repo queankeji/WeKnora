@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 )
 
 // debugReranker wraps a Reranker with LLM debug logging.

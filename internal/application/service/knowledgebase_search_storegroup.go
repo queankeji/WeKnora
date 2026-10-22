@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/application/access"
-	"github.com/Tencent/WeKnora/internal/application/service/retriever"
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/application/access"
+	"github.com/duhuimeijia/kb-engine/internal/application/service/retriever"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // storeResolveBudget caps the time a single search spends resolving the

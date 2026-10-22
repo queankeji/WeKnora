@@ -7,12 +7,12 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/agent/approval"
-	"github.com/Tencent/WeKnora/internal/agent/hitl"
-	"github.com/Tencent/WeKnora/internal/agent/operations"
-	"github.com/Tencent/WeKnora/internal/agent/policy"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/approval"
+	"github.com/duhuimeijia/kb-engine/internal/agent/hitl"
+	"github.com/duhuimeijia/kb-engine/internal/agent/operations"
+	"github.com/duhuimeijia/kb-engine/internal/agent/policy"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ConfirmedTool asks the user before running a tool that changes data, the

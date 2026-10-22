@@ -10,12 +10,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/application/service"
-	"github.com/Tencent/WeKnora/internal/config"
-	"github.com/Tencent/WeKnora/internal/handler"
-	"github.com/Tencent/WeKnora/internal/mcpserver"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/config"
+	"github.com/duhuimeijia/kb-engine/internal/handler"
+	"github.com/duhuimeijia/kb-engine/internal/mcpserver"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 )

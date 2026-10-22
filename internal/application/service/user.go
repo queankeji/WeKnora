@@ -22,12 +22,12 @@ import (
 	"github.com/google/uuid"
 	"golang.org/x/crypto/bcrypt"
 
-	apprepo "github.com/Tencent/WeKnora/internal/application/repository"
-	"github.com/Tencent/WeKnora/internal/config"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	apprepo "github.com/duhuimeijia/kb-engine/internal/application/repository"
+	"github.com/duhuimeijia/kb-engine/internal/config"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 var (

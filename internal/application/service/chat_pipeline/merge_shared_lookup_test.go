@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // Hits from an org-shared KB belong to the sharing workspace (tenant 2)

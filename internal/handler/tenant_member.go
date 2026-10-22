@@ -9,13 +9,13 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	apprepo "github.com/Tencent/WeKnora/internal/application/repository"
-	"github.com/Tencent/WeKnora/internal/application/service"
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	apprepo "github.com/duhuimeijia/kb-engine/internal/application/repository"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // TenantMemberHandler exposes /tenants/:id/members CRUD. The route layer

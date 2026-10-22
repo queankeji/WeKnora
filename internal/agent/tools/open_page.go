@@ -11,9 +11,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/Tencent/WeKnora/internal/agent/approval"
-	"github.com/Tencent/WeKnora/internal/agent/operations"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/approval"
+	"github.com/duhuimeijia/kb-engine/internal/agent/operations"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ToolOpenPage offers the user a link to a WeKnora page, optionally with a

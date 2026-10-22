@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	werrors "github.com/Tencent/WeKnora/internal/errors"
+	werrors "github.com/duhuimeijia/kb-engine/internal/errors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

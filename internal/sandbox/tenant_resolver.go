@@ -31,8 +31,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/sandbox/admission"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/admission"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ErrSandboxConfigNotFound means the referenced config is gone (deleted, or

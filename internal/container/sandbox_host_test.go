@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/dig"
 
-	"github.com/Tencent/WeKnora/internal/application/service"
-	"github.com/Tencent/WeKnora/internal/localsandbox"
-	"github.com/Tencent/WeKnora/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/localsandbox"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
 	"gorm.io/gorm"
 )
 

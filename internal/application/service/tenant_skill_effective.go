@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/sandbox"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // skillImageConfigReader reads the sandbox config an agent selected. Narrowed

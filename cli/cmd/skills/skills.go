@@ -15,10 +15,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
-	"github.com/Tencent/WeKnora/cli/internal/output"
-	skillsfs "github.com/Tencent/WeKnora/cli/skills"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
+	"github.com/duhuimeijia/kb-engine/cli/internal/output"
+	skillsfs "github.com/duhuimeijia/kb-engine/cli/skills"
 )
 
 // NewCmd builds the `weknora skills` parent command.

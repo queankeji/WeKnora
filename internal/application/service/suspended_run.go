@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/agent"
-	"github.com/Tencent/WeKnora/internal/agent/hitl"
-	agenttools "github.com/Tencent/WeKnora/internal/agent/tools"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/agent"
+	"github.com/duhuimeijia/kb-engine/internal/agent/hitl"
+	agenttools "github.com/duhuimeijia/kb-engine/internal/agent/tools"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // SuspendedRunService keeps the assistant message of a suspended run in step

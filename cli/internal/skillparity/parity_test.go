@@ -15,8 +15,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/Tencent/WeKnora/cli/cmd"
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/cmd"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
 )
 
 var (

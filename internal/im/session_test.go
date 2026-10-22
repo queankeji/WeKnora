@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/event"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/event"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 func TestMakeUserKey_UserMode(t *testing.T) {

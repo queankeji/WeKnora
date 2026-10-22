@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	agenttoken "github.com/Tencent/WeKnora/internal/agent/token"
-	"github.com/Tencent/WeKnora/internal/models/chat"
-	"github.com/Tencent/WeKnora/internal/types"
+	agenttoken "github.com/duhuimeijia/kb-engine/internal/agent/token"
+	"github.com/duhuimeijia/kb-engine/internal/models/chat"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 const (

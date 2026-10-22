@@ -22,9 +22,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/im"
-	"github.com/Tencent/WeKnora/internal/logger"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/im"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 	"github.com/gin-gonic/gin"
 )
 

@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // P3 embedded-object pipeline tests: board blocks (block_type 43) exported via

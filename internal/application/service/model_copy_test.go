@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/types"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

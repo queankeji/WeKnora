@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
-	"github.com/Tencent/WeKnora/cli/internal/projectlink"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
+	"github.com/duhuimeijia/kb-engine/cli/internal/projectlink"
 )
 
 // mkLinkFile seeds .weknora/project.yaml in dir so the unlink path has

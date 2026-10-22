@@ -15,9 +15,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
-	sdk "github.com/Tencent/WeKnora/client"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
+	sdk "github.com/duhuimeijia/kb-engine/client"
 )
 
 var stopFields = []string{"session_id", "message_id", "stopped"}

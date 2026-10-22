@@ -1,6 +1,6 @@
 package sandbox
 
-import "github.com/Tencent/WeKnora/internal/sandbox/workspace"
+import "github.com/duhuimeijia/kb-engine/internal/sandbox/workspace"
 
 // WorkspaceOrigin is where a workspace path is rooted. The type lives in the
 // workspace subpackage; this alias keeps existing callers compiling.

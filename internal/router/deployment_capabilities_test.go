@@ -7,9 +7,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/application/service"
-	"github.com/Tencent/WeKnora/internal/handler"
-	"github.com/Tencent/WeKnora/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/handler"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
 	"github.com/gin-gonic/gin"
 )
 

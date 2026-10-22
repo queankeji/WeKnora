@@ -13,10 +13,10 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"github.com/Tencent/WeKnora/internal/application/repository"
-	"github.com/Tencent/WeKnora/internal/sandbox"
-	"github.com/Tencent/WeKnora/internal/sandbox/allocation"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/application/repository"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/allocation"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 type fakeConfigs map[string]string // config id -> allocation_mode

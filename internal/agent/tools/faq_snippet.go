@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/searchutil"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/searchutil"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // faqMaxSimilarQuestionsDisplay caps similar_question rows in tool output.

@@ -12,8 +12,8 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/Tencent/WeKnora/internal/application/service"
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 )
 
 // terminalBridge owns one upgraded terminal connection. Exactly one of the

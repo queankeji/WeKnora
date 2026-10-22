@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/searchutil"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/searchutil"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // Ranking works on expanded contexts. The model must instead see every source

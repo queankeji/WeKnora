@@ -8,10 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/redis/go-redis/v9"
 
-	"github.com/Tencent/WeKnora/internal/embedpolicy"
-	"github.com/Tencent/WeKnora/internal/handler"
-	"github.com/Tencent/WeKnora/internal/middleware"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/embedpolicy"
+	"github.com/duhuimeijia/kb-engine/internal/handler"
+	"github.com/duhuimeijia/kb-engine/internal/middleware"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // RegisterCustomAgentRoutes registers custom agent routes.

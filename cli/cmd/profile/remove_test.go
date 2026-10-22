@@ -5,11 +5,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	"github.com/Tencent/WeKnora/cli/internal/config"
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
-	"github.com/Tencent/WeKnora/cli/internal/secrets"
-	"github.com/Tencent/WeKnora/cli/internal/testutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/config"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
+	"github.com/duhuimeijia/kb-engine/cli/internal/secrets"
+	"github.com/duhuimeijia/kb-engine/cli/internal/testutil"
 )
 
 // seedStore returns a MemStore pre-loaded with sentinel values for every

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 )
 
 // skillProgressTTL keeps a finished run's last value around long enough for a

@@ -42,9 +42,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	modelutils "github.com/Tencent/WeKnora/internal/models/utils"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	modelutils "github.com/duhuimeijia/kb-engine/internal/models/utils"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/google/uuid"
 )
 

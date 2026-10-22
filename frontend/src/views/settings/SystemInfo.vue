@@ -26,7 +26,7 @@
       <div class="setting-row">
         <div class="setting-info">
           <label>产品信息</label>
-          <p class="desc">都会美家知识库 · 基于腾讯开源 WeKnora（MIT License）构建</p>
+          <p class="desc">都会美家知识库 · 企业门店知识中枢</p>
         </div>
         <div class="setting-control">
           <span class="info-value">都会美家知识库</span>

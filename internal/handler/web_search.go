@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/gin-gonic/gin"
 )
 

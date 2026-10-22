@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/Tencent/WeKnora/internal/handler"
+	"github.com/duhuimeijia/kb-engine/internal/handler"
 )
 
 // Models are tenant-wide infrastructure (LLM credentials, embeddings,

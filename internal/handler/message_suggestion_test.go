@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 )

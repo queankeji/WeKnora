@@ -3,8 +3,8 @@ package rerank
 import (
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/providers"
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/models/providers"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
 )
 
 // TestDetectByURLSeesVendorCatalog guards the blank import of

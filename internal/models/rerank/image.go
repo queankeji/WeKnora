@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/imageprep"
-	"github.com/Tencent/WeKnora/internal/tracing/langfuse"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/imageprep"
+	"github.com/duhuimeijia/kb-engine/internal/tracing/langfuse"
 	"golang.org/x/sync/errgroup"
 )
 

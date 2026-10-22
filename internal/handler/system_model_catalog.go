@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/Tencent/WeKnora/internal/application/repository"
-	"github.com/Tencent/WeKnora/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/application/repository"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
 	"github.com/gin-gonic/gin"
 )
 

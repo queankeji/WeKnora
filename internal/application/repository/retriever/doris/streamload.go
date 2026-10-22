@@ -11,8 +11,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/logger"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // Stream Load 相关常量。

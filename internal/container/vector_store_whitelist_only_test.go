@@ -8,7 +8,7 @@ import (
 
 	milvusclient "github.com/milvus-io/milvus/client/v2/milvusclient"
 
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 func whitelistOnly(t *testing.T, whitelist, only string) {

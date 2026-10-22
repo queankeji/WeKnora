@@ -7,10 +7,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/providers"
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/providers"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/stretchr/testify/require"
 )
 

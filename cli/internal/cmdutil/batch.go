@@ -17,7 +17,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/Tencent/WeKnora/cli/internal/output"
+	"github.com/duhuimeijia/kb-engine/cli/internal/output"
 )
 
 // BatchOutcome is one per-target result preserving argv order. Err==nil ⇒ success.

@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/Tencent/WeKnora/internal/types"
+import "github.com/duhuimeijia/kb-engine/internal/types"
 
 // AuthLoginResponse is the HTTP-safe login / switch-tenant response shape.
 type AuthLoginResponse struct {

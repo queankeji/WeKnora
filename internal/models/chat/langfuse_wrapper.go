@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/tracing/langfuse"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/tracing/langfuse"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // langfuseChat wraps a Chat implementation and emits a Langfuse generation

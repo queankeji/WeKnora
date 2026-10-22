@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/vlm"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/vlm"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // stubVLM answers observation prompts with a well-formed observation (a block of

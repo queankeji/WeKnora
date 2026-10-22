@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/models"
-	"github.com/Tencent/WeKnora/internal/models/providers"
+	"github.com/duhuimeijia/kb-engine/internal/models"
+	"github.com/duhuimeijia/kb-engine/internal/models/providers"
 )
 
 // Initialize is the application composition entry point. A failed deployment

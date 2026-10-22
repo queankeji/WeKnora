@@ -19,8 +19,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
-	"github.com/Tencent/WeKnora/cli/internal/output"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
+	"github.com/duhuimeijia/kb-engine/cli/internal/output"
 )
 
 // DryRunPlan describes the would-be action for envelope meta.plan.

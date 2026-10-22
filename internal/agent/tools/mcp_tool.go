@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/agent/approval"
-	"github.com/Tencent/WeKnora/internal/agent/hitl"
-	"github.com/Tencent/WeKnora/internal/agent/policy"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/mcp"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/approval"
+	"github.com/duhuimeijia/kb-engine/internal/agent/hitl"
+	"github.com/duhuimeijia/kb-engine/internal/agent/policy"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/mcp"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/santhosh-tekuri/jsonschema/v6"
 )
 

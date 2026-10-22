@@ -12,9 +12,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Tencent/WeKnora/internal/infrastructure/chunker"
-	"github.com/Tencent/WeKnora/internal/infrastructure/docparser"
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/infrastructure/chunker"
+	"github.com/duhuimeijia/kb-engine/internal/infrastructure/docparser"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 	"github.com/gin-gonic/gin"
 )
 

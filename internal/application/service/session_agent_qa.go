@@ -8,16 +8,16 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/agent"
-	"github.com/Tencent/WeKnora/internal/agent/collaboration"
-	"github.com/Tencent/WeKnora/internal/agent/tools"
-	"github.com/Tencent/WeKnora/internal/event"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/models/chat"
-	"github.com/Tencent/WeKnora/internal/models/rerank"
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
-	"github.com/Tencent/WeKnora/internal/types"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/agent"
+	"github.com/duhuimeijia/kb-engine/internal/agent/collaboration"
+	"github.com/duhuimeijia/kb-engine/internal/agent/tools"
+	"github.com/duhuimeijia/kb-engine/internal/event"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/models/chat"
+	"github.com/duhuimeijia/kb-engine/internal/models/rerank"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // modelMaxOutputTokens returns the configured or cataloged output limit of a

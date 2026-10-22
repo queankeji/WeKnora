@@ -7,9 +7,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
-	"github.com/Tencent/WeKnora/cli/internal/output"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
+	"github.com/duhuimeijia/kb-engine/cli/internal/output"
 )
 
 type exitCodeRow struct {

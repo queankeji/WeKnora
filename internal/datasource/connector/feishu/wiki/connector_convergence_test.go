@@ -9,8 +9,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/datasource/connector/feishu/core"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource/connector/feishu/core"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // statefulFeishu is a fake Feishu server whose per-node export outcome can be

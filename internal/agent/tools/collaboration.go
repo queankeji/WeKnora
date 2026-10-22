@@ -8,8 +8,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/agent/collaboration"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/collaboration"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // CollaborationToolNames lists the six runtime collaboration tools.

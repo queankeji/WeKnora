@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"sort"
 
-	"github.com/Tencent/WeKnora/internal/searchutil"
-	"github.com/Tencent/WeKnora/internal/sourceloc"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/searchutil"
+	"github.com/duhuimeijia/kb-engine/internal/sourceloc"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // mergeSequentialChunks joins sequential current chunk bodies.

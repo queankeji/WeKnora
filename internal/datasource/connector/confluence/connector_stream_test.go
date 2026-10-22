@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/datasource"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 type roundTripper func(*http.Request) (*http.Response, error)

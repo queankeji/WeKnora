@@ -14,7 +14,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 )
 
 // paginationHopCap mirrors maxPaginationHops in client.go. It is spelled as a

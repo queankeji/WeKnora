@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/types"
-	secutils "github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	secutils "github.com/duhuimeijia/kb-engine/internal/utils"
 	"github.com/mark3labs/mcp-go/client/transport"
 	sdk "github.com/mark3labs/mcp-go/mcp"
 	"github.com/stretchr/testify/require"

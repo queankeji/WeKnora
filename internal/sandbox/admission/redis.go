@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/common/redislock"
+	"github.com/duhuimeijia/kb-engine/internal/common/redislock"
 	"github.com/redis/go-redis/v9"
 )
 

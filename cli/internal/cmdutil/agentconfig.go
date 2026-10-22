@@ -8,7 +8,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	sdk "github.com/Tencent/WeKnora/client"
+	sdk "github.com/duhuimeijia/kb-engine/client"
 )
 
 // AgentConfigFlags carries hot-path flag values plus per-flag "was set"

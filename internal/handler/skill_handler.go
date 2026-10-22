@@ -4,12 +4,12 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/Tencent/WeKnora/internal/application/access"
-	"github.com/Tencent/WeKnora/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/application/access"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
 	// Referenced only by the @Failure annotations (errors.AppError); swag
 	// resolves annotation types through the file's imports.
-	_ "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/types"
+	_ "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/gin-gonic/gin"
 )
 

@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/agent/hitl"
-	"github.com/Tencent/WeKnora/internal/agent/policy"
-	"github.com/Tencent/WeKnora/internal/config"
-	"github.com/Tencent/WeKnora/internal/event"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/hitl"
+	"github.com/duhuimeijia/kb-engine/internal/agent/policy"
+	"github.com/duhuimeijia/kb-engine/internal/config"
+	"github.com/duhuimeijia/kb-engine/internal/event"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // Checker answers per-tool MCP policy questions used during registration and execution.

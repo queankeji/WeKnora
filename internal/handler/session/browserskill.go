@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/browserskill"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/browserskill"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/gin-gonic/gin"
 )
 

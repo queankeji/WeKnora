@@ -6,8 +6,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/datasource"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 func twoFolderFixture(t *testing.T) (*Connector, *fakeAPI, *types.DataSourceConfig, string, string) {

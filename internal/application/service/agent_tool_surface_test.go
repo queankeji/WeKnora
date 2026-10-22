@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/agent/tools"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/tools"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/stretchr/testify/require"
 )
 

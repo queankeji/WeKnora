@@ -4,10 +4,10 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/Tencent/WeKnora/internal/event"
-	"github.com/Tencent/WeKnora/internal/models/chat"
-	"github.com/Tencent/WeKnora/internal/models/rerank"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/event"
+	"github.com/duhuimeijia/kb-engine/internal/models/chat"
+	"github.com/duhuimeijia/kb-engine/internal/models/rerank"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // AgentStreamEvent represents a streaming event from the agent

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/productdocs"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/productdocs"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // WeKnora documentation tool names.

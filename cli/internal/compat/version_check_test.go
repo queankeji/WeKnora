@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Tencent/WeKnora/cli/internal/compat"
-	sdk "github.com/Tencent/WeKnora/client"
+	"github.com/duhuimeijia/kb-engine/cli/internal/compat"
+	sdk "github.com/duhuimeijia/kb-engine/client"
 )
 
 type fakeProbeClient struct {

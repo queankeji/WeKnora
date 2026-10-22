@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/datasource"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 type projectSelection struct {

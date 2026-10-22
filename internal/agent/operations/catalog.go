@@ -18,8 +18,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Tencent/WeKnora/internal/agent/policy"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/policy"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // Risk classifies an operation by its effect on user data.

@@ -9,9 +9,9 @@ import (
 	"image/png"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/imageprep"
-	"github.com/Tencent/WeKnora/internal/models/rerank"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/imageprep"
+	"github.com/duhuimeijia/kb-engine/internal/models/rerank"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

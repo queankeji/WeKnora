@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/event"
-	"github.com/Tencent/WeKnora/internal/modelcontext"
-	"github.com/Tencent/WeKnora/internal/models/chat"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/event"
+	"github.com/duhuimeijia/kb-engine/internal/modelcontext"
+	"github.com/duhuimeijia/kb-engine/internal/models/chat"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,7 +1,7 @@
 package langfuse
 
 import (
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // SummarizeMemoryRecallOutput builds Langfuse output for a memory.recall span.

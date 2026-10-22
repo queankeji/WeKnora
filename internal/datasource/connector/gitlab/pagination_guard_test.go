@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 	"github.com/stretchr/testify/require"
 )
 

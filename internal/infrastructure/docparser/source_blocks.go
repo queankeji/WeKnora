@@ -3,8 +3,8 @@ package docparser
 import (
 	"encoding/json"
 
-	"github.com/Tencent/WeKnora/docreader/proto"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/docreader/proto"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // wireSourceBlock is the transport shape of a source block: a markdown range

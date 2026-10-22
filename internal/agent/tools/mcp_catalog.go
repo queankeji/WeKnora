@@ -12,9 +12,9 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"github.com/Tencent/WeKnora/internal/agent/approval"
-	"github.com/Tencent/WeKnora/internal/agent/policy"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/agent/approval"
+	"github.com/duhuimeijia/kb-engine/internal/agent/policy"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 const mcpDiscoveryDescription = "" +

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
 )
 
 // TestAgentInvoke_NowReturnsUnknownSubcommand verifies the deleted v0.6

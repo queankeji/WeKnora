@@ -3,8 +3,8 @@ package parity
 import (
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // internal/types cannot import internal/models/api (it would cycle), so

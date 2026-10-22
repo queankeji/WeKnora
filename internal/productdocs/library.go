@@ -16,7 +16,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	websitedocs "github.com/Tencent/WeKnora/website-docs"
+	websitedocs "github.com/duhuimeijia/kb-engine/website-docs"
 )
 
 // Categories are the documentation's sidebar groups, in site order. They

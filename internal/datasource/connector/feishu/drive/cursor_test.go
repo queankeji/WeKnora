@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/datasource/connector/feishu/core"
+	"github.com/duhuimeijia/kb-engine/internal/datasource/connector/feishu/core"
 )
 
 // TestDriveCursorRoundTrip verifies driveOps.EncodeCursor/DecodeCursorTimes

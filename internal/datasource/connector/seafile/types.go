@@ -13,8 +13,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Tencent/WeKnora/internal/datasource"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // config is the parsed credential set. The selection lives entirely in

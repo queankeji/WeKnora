@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/im"
+	"github.com/duhuimeijia/kb-engine/internal/im"
 )
 
 func useTestHTTPClient(t *testing.T) {

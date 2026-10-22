@@ -12,7 +12,7 @@ const docTemplate = `{
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
             "name": "WeKnora Github",
-            "url": "https://github.com/Tencent/WeKnora"
+            "url": "https://github.com/duhuimeijia/kb-engine"
         },
         "version": "{{.Version}}"
     },

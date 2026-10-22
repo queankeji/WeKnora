@@ -963,7 +963,7 @@ const file_docreader_proto_rawDesc = "" +
 	"\n" +
 	"ReadStream\x12\x16.docreader.ReadRequest\x1a\x1d.docreader.ReadStreamResponse\"\x000\x01\x12N\n" +
 	"\vListEngines\x12\x1d.docreader.ListEnginesRequest\x1a\x1e.docreader.ListEnginesResponse\"\x00\x12Z\n" +
-	"\x0fPreprocessImage\x12!.docreader.PreprocessImageRequest\x1a\".docreader.PreprocessImageResponse\"\x00B5Z3github.com/Tencent/WeKnora/internal/docreader/protob\x06proto3"
+	"\x0fPreprocessImage\x12!.docreader.PreprocessImageRequest\x1a\".docreader.PreprocessImageResponse\"\x00B5Z3github.com/duhuimeijia/kb-engine/internal/docreader/protob\x06proto3"
 
 var (
 	file_docreader_proto_rawDescOnce sync.Once

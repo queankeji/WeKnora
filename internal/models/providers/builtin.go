@@ -1,6 +1,6 @@
 package providers
 
-import "github.com/Tencent/WeKnora/internal/models/internal/configcopy"
+import "github.com/duhuimeijia/kb-engine/internal/models/internal/configcopy"
 
 // Builtins returns independent provider definitions without registering global state.
 func Builtins() []*Definition {

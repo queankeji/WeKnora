@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	sdk "github.com/Tencent/WeKnora/client"
+	sdk "github.com/duhuimeijia/kb-engine/client"
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	"github.com/Tencent/WeKnora/cli/internal/iostreams"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/iostreams"
 )
 
 // WaitOptions captures `doc wait` flag state.

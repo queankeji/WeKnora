@@ -3,8 +3,8 @@ package access
 import (
 	"encoding/json"
 
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/types"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // RejectMovingKnowledge is shared by admission and persisted service checks.

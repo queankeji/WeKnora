@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
 )
 
 // Config holds the Pinecone endpoint and rerank request settings.

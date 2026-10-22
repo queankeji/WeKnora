@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/handler"
-	sessionhandler "github.com/Tencent/WeKnora/internal/handler/session"
-	"github.com/Tencent/WeKnora/internal/middleware"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/handler"
+	sessionhandler "github.com/duhuimeijia/kb-engine/internal/handler/session"
+	"github.com/duhuimeijia/kb-engine/internal/middleware"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 	"github.com/gin-gonic/gin"
 )
 

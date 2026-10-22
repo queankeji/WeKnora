@@ -3,7 +3,7 @@ package retriever
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // vectorStoreRepoOwnership adapts a VectorStoreRepository to the

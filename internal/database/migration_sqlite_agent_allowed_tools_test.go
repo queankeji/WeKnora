@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/agent/tools"
+	"github.com/duhuimeijia/kb-engine/internal/agent/tools"
 	"github.com/stretchr/testify/require"
 )
 

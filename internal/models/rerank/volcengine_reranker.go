@@ -4,9 +4,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/api/volcengineknowledge"
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/api/volcengineknowledge"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
 )
 
 const (

@@ -13,8 +13,8 @@ import (
 
 	"go.uber.org/dig"
 
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // bootstrapEnvVar is the env var that names the email of the user who

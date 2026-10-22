@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/sourceloc"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/sourceloc"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // minerUBBoxScale is the coordinate range of content_list bounding boxes:

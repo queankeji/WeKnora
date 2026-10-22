@@ -2,11 +2,11 @@
 package container
 
 import (
-	"github.com/Tencent/WeKnora/internal/application/service/sandboxalloc"
-	"github.com/Tencent/WeKnora/internal/background"
-	"github.com/Tencent/WeKnora/internal/sandbox"
-	"github.com/Tencent/WeKnora/internal/stream"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/application/service/sandboxalloc"
+	"github.com/duhuimeijia/kb-engine/internal/background"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/stream"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // newBackgroundActivityRegistry returns the registry of live background work.

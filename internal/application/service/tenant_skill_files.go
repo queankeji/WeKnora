@@ -12,8 +12,8 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/types"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // skillFileTextLimit is how much of a text file the admin browser is given.

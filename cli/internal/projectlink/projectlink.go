@@ -16,7 +16,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Tencent/WeKnora/cli/internal/xdg"
+	"github.com/duhuimeijia/kb-engine/cli/internal/xdg"
 	"gopkg.in/yaml.v3"
 )
 

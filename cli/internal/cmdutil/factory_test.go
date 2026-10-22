@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Tencent/WeKnora/cli/internal/config"
-	"github.com/Tencent/WeKnora/cli/internal/projectlink"
-	"github.com/Tencent/WeKnora/cli/internal/prompt"
-	"github.com/Tencent/WeKnora/cli/internal/secrets"
-	sdk "github.com/Tencent/WeKnora/client"
+	"github.com/duhuimeijia/kb-engine/cli/internal/config"
+	"github.com/duhuimeijia/kb-engine/cli/internal/projectlink"
+	"github.com/duhuimeijia/kb-engine/cli/internal/prompt"
+	"github.com/duhuimeijia/kb-engine/cli/internal/secrets"
+	sdk "github.com/duhuimeijia/kb-engine/client"
 )
 
 // TestFactory_Lazy ensures none of the closures execute work at construction

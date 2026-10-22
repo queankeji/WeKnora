@@ -5,7 +5,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Tencent/WeKnora/internal/sandbox/workspace"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/workspace"
 )
 
 // OwnerKind classifies who sessions.user_id names.

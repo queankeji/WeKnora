@@ -3,8 +3,8 @@
 package localsandbox
 
 import (
-	"github.com/Tencent/WeKnora/internal/localsandbox/core"
-	"github.com/Tencent/WeKnora/internal/localsandbox/winhost"
+	"github.com/duhuimeijia/kb-engine/internal/localsandbox/core"
+	"github.com/duhuimeijia/kb-engine/internal/localsandbox/winhost"
 )
 
 func NewBackend() (core.Backend, error) { return winhost.New() }

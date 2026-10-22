@@ -12,7 +12,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/Tencent/WeKnora/cli/internal/xdg"
+	"github.com/duhuimeijia/kb-engine/cli/internal/xdg"
 )
 
 // Config is the on-disk schema. Empty zero-value is valid (returned when the

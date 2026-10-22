@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
-	"github.com/Tencent/WeKnora/internal/types"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // VendorRef identifies the vendor a set of model parameters belongs to.

@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/Tencent/WeKnora/internal/handler"
+	"github.com/duhuimeijia/kb-engine/internal/handler"
 	"github.com/gin-gonic/gin"
 )
 

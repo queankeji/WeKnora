@@ -7,7 +7,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 )
 
 // inspectByQueryResponse parses an _update_by_query / _delete_by_query

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // MemoryNoticeInbox is the single-process NoticeInbox used by Lite.

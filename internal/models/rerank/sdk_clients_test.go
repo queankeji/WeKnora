@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

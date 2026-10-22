@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	infra_web_search "github.com/Tencent/WeKnora/internal/infrastructure/web_search"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	infra_web_search "github.com/duhuimeijia/kb-engine/internal/infrastructure/web_search"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // webSearchProviderService implements interfaces.WebSearchProviderService

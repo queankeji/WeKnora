@@ -12,8 +12,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/Tencent/WeKnora/internal/localsandbox"
-	"github.com/Tencent/WeKnora/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/localsandbox"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
 )
 
 func TestAdapterSatisfiesCapabilityInterfaces(t *testing.T) {

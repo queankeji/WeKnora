@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
 )
 
 // Config supplies the endpoint and wire-level settings for a TEI reranker.

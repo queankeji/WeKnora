@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
-	apperrors "github.com/Tencent/WeKnora/internal/errors"
-	"github.com/Tencent/WeKnora/internal/types"
+	apperrors "github.com/duhuimeijia/kb-engine/internal/errors"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 func sortedFAQIDs[V any](values map[int64]V) []int64 {

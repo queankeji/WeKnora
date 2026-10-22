@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/api/openaicompletions"
-	"github.com/Tencent/WeKnora/internal/models/chat"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/api/openaicompletions"
+	"github.com/duhuimeijia/kb-engine/internal/models/chat"
 	"github.com/stretchr/testify/require"
 )
 

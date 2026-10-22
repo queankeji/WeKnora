@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
 	"github.com/stretchr/testify/assert"
 )
 

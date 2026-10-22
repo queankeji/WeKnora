@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/vlm"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/vlm"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // thinkingCall is one model request made by a pipeline, with the thinking

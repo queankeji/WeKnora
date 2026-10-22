@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
 )
 
 // dryRunExpectation declares, for every leaf command, whether it must register

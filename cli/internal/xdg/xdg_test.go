@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/cli/internal/xdg"
+	"github.com/duhuimeijia/kb-engine/cli/internal/xdg"
 )
 
 func TestPath_HonorsEnv(t *testing.T) {

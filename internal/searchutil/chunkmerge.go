@@ -4,7 +4,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // JoinChunkContent joins two current chunk bodies without relying on parser

@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 	"github.com/hibiken/asynq"
 )
 

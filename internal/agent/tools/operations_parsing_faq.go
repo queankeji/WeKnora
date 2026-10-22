@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/agent/operations"
+	"github.com/duhuimeijia/kb-engine/internal/agent/operations"
 )
 
 // parsingAndFAQDetail keeps the actual change visible on the approval card.

@@ -48,8 +48,8 @@ package providers
 import (
 	_ "embed"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 //go:embed assets/minimax.svg

@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/sandbox"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox"
 )
 
 // HostSkillTree is the on-disk skill version tree used by Lite local installs.

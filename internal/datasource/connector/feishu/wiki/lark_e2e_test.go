@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/datasource/connector/feishu/core"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/datasource/connector/feishu/core"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // A Lark connector must surface wiki links on the Lark host. Before Lark became

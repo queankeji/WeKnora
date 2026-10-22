@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/models/limiter"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/limiter"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // fakeChat is a minimal Chat whose stream emits continuously until ctx is done,

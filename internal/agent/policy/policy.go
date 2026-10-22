@@ -8,7 +8,7 @@
 // See docs/design/agent-permission-model.md.
 package policy
 
-import "github.com/Tencent/WeKnora/internal/types"
+import "github.com/duhuimeijia/kb-engine/internal/types"
 
 // Risk classifies an action by its effect on user data.
 type Risk string

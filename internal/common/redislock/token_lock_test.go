@@ -10,7 +10,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Tencent/WeKnora/internal/common/redislock"
+	"github.com/duhuimeijia/kb-engine/internal/common/redislock"
 )
 
 func newTokenLockTestClient(t *testing.T) (*redis.Client, *miniredis.Miniredis) {

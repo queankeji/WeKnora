@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/datasource/connector/feishu/core"
-	"github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/datasource/connector/feishu/core"
+	"github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // wikiNodeCreateResp is the subset of POST /wiki/v2/spaces/:id/nodes we need.

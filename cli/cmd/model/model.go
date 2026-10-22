@@ -12,8 +12,8 @@ package modelcmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/Tencent/WeKnora/cli/internal/cmdutil"
-	sdk "github.com/Tencent/WeKnora/client"
+	"github.com/duhuimeijia/kb-engine/cli/internal/cmdutil"
+	sdk "github.com/duhuimeijia/kb-engine/client"
 )
 
 // NewCmd builds the `weknora model` parent and registers leaves. Called from

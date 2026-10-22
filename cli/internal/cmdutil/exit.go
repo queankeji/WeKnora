@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/Tencent/WeKnora/cli/internal/output"
+	"github.com/duhuimeijia/kb-engine/cli/internal/output"
 )
 
 // globalFormatMode tracks the resolved --format value for the current invocation.

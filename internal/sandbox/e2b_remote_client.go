@@ -19,7 +19,7 @@ import (
 	"github.com/gorilla/websocket"
 	e2b "github.com/matiasinsaurralde/go-e2b"
 
-	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
 )
 
 // E2BRemoteClient implements RemoteSandboxClient on top of the go-e2b client.

@@ -1,8 +1,8 @@
 package sandboxalloc
 
 import (
-	"github.com/Tencent/WeKnora/internal/sandbox/allocation"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/allocation"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ToEntity converts an assignment into its row, and for a user-mode one the

@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/Tencent/WeKnora/internal/types/interfaces"
+	"github.com/duhuimeijia/kb-engine/internal/types/interfaces"
 )
 
 // Listeners is the ordered set of session lifecycle listeners. Feature

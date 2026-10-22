@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Tencent/WeKnora/internal/infrastructure/web_fetch"
-	"github.com/Tencent/WeKnora/internal/logger"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/infrastructure/web_fetch"
+	"github.com/duhuimeijia/kb-engine/internal/logger"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // PluginWebFetch fetches full page content for reranked web search results.

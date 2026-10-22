@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ResolveEffectiveConfig returns the Config to build a tenant's sandbox manager

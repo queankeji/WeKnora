@@ -3,12 +3,12 @@ package interfaces
 import (
 	"context"
 
-	"github.com/Tencent/WeKnora/internal/models/asr"
-	"github.com/Tencent/WeKnora/internal/models/chat"
-	"github.com/Tencent/WeKnora/internal/models/embedding"
-	"github.com/Tencent/WeKnora/internal/models/rerank"
-	"github.com/Tencent/WeKnora/internal/models/vlm"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/asr"
+	"github.com/duhuimeijia/kb-engine/internal/models/chat"
+	"github.com/duhuimeijia/kb-engine/internal/models/embedding"
+	"github.com/duhuimeijia/kb-engine/internal/models/rerank"
+	"github.com/duhuimeijia/kb-engine/internal/models/vlm"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ModelService defines the model service interface

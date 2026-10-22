@@ -4,9 +4,9 @@ package catalog
 import (
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/models"
-	"github.com/Tencent/WeKnora/internal/models/internal/configcopy"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models"
+	"github.com/duhuimeijia/kb-engine/internal/models/internal/configcopy"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // Catalog is an immutable model index for one provider. Queries return owned copies.

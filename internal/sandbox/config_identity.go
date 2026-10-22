@@ -19,7 +19,7 @@
 package sandbox
 
 import (
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // SandboxIdentity is the comparable projection of a config: two configs with

@@ -9,9 +9,9 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/Tencent/WeKnora/internal/handler/session"
-	"github.com/Tencent/WeKnora/internal/localsandbox"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/handler/session"
+	"github.com/duhuimeijia/kb-engine/internal/localsandbox"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 type hostProjectLookupImpl struct {

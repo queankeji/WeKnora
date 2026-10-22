@@ -1,10 +1,10 @@
-/** Public deployment of website-docs (VitePress, base `/docs/`).
+/** 帮助文档站点根地址。
  *
- * luyin 品牌剥离决策（A8）：fork 不部署 website-docs，帮助链接暂指向
- * WeKnora 官方文档（纯功能文档，非营销页）；luyin 内部文档站就绪后
- * 替换此常量即可（单点修改，docsUrl.test.ts 不受影响）。
+ * 都会美家知识库：内部文档站就绪后在此常量填入地址（单点修改）。
+ * 当前未部署文档站，链接指向站内相对路径，点击时由前端兜底提示，
+ * 不再引用任何外部厂商文档（去品牌化）。
  */
-export const DOCS_BASE_URL = 'https://weknora.weixin.qq.com/docs/'
+export const DOCS_BASE_URL = '/docs/'
 
 /**
  * Doc pages linked from the UI, as website-docs paths without the `.md`

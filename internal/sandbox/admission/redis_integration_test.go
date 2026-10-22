@@ -10,7 +10,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Tencent/WeKnora/internal/sandbox/admission"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/admission"
 )
 
 // integrationEnv returns an integration dependency's address. Missing, the

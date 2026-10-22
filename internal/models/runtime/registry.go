@@ -5,12 +5,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Tencent/WeKnora/internal/models"
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/catalog"
-	"github.com/Tencent/WeKnora/internal/models/internal/configcopy"
-	"github.com/Tencent/WeKnora/internal/models/providers"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/catalog"
+	"github.com/duhuimeijia/kb-engine/internal/models/internal/configcopy"
+	"github.com/duhuimeijia/kb-engine/internal/models/providers"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // Provider combines a provider definition with a catalog from the same runtime

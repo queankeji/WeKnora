@@ -9,9 +9,9 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/Tencent/WeKnora/internal/background"
-	"github.com/Tencent/WeKnora/internal/sandbox/allocation"
-	"github.com/Tencent/WeKnora/internal/sandbox/workspace"
+	"github.com/duhuimeijia/kb-engine/internal/background"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/allocation"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/workspace"
 )
 
 // SessionSandboxBindingVersion is the schema of a per-session machine binding.

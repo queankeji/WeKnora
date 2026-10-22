@@ -14,7 +14,7 @@ import (
 	"github.com/xuri/excelize/v2"
 	"golang.org/x/net/html"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // maxUnits bounds the structure extracted from one file.

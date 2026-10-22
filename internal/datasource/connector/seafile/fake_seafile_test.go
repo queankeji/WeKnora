@@ -15,7 +15,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/utils"
+	"github.com/duhuimeijia/kb-engine/internal/utils"
 )
 
 // TestMain whitelists loopback for SSRF so the httptest servers are reachable.

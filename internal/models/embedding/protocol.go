@@ -6,14 +6,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/api/arkembeddings"
-	"github.com/Tencent/WeKnora/internal/models/api/dashscopeembeddings"
-	"github.com/Tencent/WeKnora/internal/models/api/googleembeddings"
-	"github.com/Tencent/WeKnora/internal/models/api/openaiembeddings"
-	"github.com/Tencent/WeKnora/internal/models/imageprep"
-	modelruntime "github.com/Tencent/WeKnora/internal/models/runtime"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/models/api"
+	"github.com/duhuimeijia/kb-engine/internal/models/api/arkembeddings"
+	"github.com/duhuimeijia/kb-engine/internal/models/api/dashscopeembeddings"
+	"github.com/duhuimeijia/kb-engine/internal/models/api/googleembeddings"
+	"github.com/duhuimeijia/kb-engine/internal/models/api/openaiembeddings"
+	"github.com/duhuimeijia/kb-engine/internal/models/imageprep"
+	modelruntime "github.com/duhuimeijia/kb-engine/internal/models/runtime"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // retryPolicy is the transport-error retry budget; tests shorten it.

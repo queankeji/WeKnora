@@ -3,8 +3,8 @@ package sandboxalloc
 import (
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/sandbox/allocation"
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/sandbox/allocation"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ownerFromSession maps the session's persisted owner onto allocation.Owner.

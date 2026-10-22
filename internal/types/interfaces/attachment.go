@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Tencent/WeKnora/internal/types"
+	"github.com/duhuimeijia/kb-engine/internal/types"
 )
 
 // ErrAttachmentNotFound indicates that a reference is absent from the authorized inventory.

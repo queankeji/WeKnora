@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Tencent/WeKnora/internal/application/service"
+	"github.com/duhuimeijia/kb-engine/internal/application/service"
 	"github.com/gin-gonic/gin"
 )
 
