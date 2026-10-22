@@ -12,7 +12,15 @@
 #   WEKNORA_ADMIN_PASSWORD='<真实密码，或见 luyin/tmp/weknora_admin.env>' \
 #   DEEPSEEK_API_KEY='sk-test-placeholder' \      # ⚠️ 占位 key，真实 key 到位后替换
 #   DASHSCOPE_API_KEY='sk-test-placeholder' \     # ⚠️ 占位 key
+#   DASHSCOPE_BASE_URL='https://llm-ivbhg2pojsk2mo49.cn-beijing.maas.aliyuncs.com/compatible-mode/v1' \
 #   bash deploy-luyin/model-setup.sh
+#
+# 端点说明（2026-10-22 实测）：DASHSCOPE_BASE_URL 缺省为 DashScope 官方
+# compatible-mode；当前用户的 key 挂 MaaS 专属推理端点（OpenAI 兼容模式）。
+# MaaS 端点实测能力：qwen-plus(chat)✅、text-embedding-v4(embedding,1024维)✅
+# （未列于 /models 但实际部署）、multimodal-embedding(原生协议)✅、
+# qwen3.7-text-rerank 在部署列表。aliyun provider 的端点改写逻辑对两种
+# 端点均兼容（compat 路径剥离去根 + 按协议重拼）。
 #
 # 约定：本脚本不写死任何真实密钥；占位 key 一律 sk-test-placeholder。
 # 真实 key 到位后只需替换环境变量重跑（或走管理台 UI 更新凭据）。
@@ -25,6 +33,8 @@ ADMIN_EMAIL="${WEKNORA_ADMIN_EMAIL:?need WEKNORA_ADMIN_EMAIL}"
 ADMIN_PASSWORD="${WEKNORA_ADMIN_PASSWORD:?need WEKNORA_ADMIN_PASSWORD}"
 DEEPSEEK_KEY="${DEEPSEEK_API_KEY:-sk-test-placeholder}"   # ⚠️ 占位 key
 DASHSCOPE_KEY="${DASHSCOPE_API_KEY:-sk-test-placeholder}" # ⚠️ 占位 key
+# DashScope 端点：缺省官方 compatible-mode，可覆盖为 MaaS 专属推理端点
+DASHSCOPE_BASE="${DASHSCOPE_BASE_URL:-$DASHSCOPE_BASE}"
 
 TMPDIR_RUN="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR_RUN"' EXIT
@@ -72,17 +82,17 @@ create_model "deepseek-chat" "DeepSeek Chat (luyin)" "KnowledgeQA" \
 
 say "create DashScope chat model (key: ${DASHSCOPE_KEY:0:8}...)"
 create_model "qwen-plus" "Qwen Plus via DashScope (luyin)" "KnowledgeQA" \
-  "{\"base_url\":\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\"api_key\":\"$DASHSCOPE_KEY\",\"provider\":\"aliyun\"}"
+  "{\"base_url\":\"$DASHSCOPE_BASE\",\"api_key\":\"$DASHSCOPE_KEY\",\"provider\":\"aliyun\"}"
 
 say "create DashScope text embedding model"
 create_model "text-embedding-v4" "DashScope text-embedding-v4 (luyin)" "Embedding" \
-  "{\"base_url\":\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\"api_key\":\"$DASHSCOPE_KEY\",\"provider\":\"aliyun\",\"embedding_parameters\":{\"dimension\":1024,\"truncate_prompt_tokens\":8192}}"
+  "{\"base_url\":\"$DASHSCOPE_BASE\",\"api_key\":\"$DASHSCOPE_KEY\",\"provider\":\"aliyun\",\"embedding_parameters\":{\"dimension\":1024,\"truncate_prompt_tokens\":8192}}"
 
 say "create DashScope MULTIMODAL embedding model (luyin M2 视觉召回核心)"
 # 百炼原生多模态协议（dashscope-embeddings）：目录 match "multimodal-embedding*"，
 # 旧名 multimodal-embedding-one-peace-v1 同样命中该通配。
 create_model "multimodal-embedding-v1" "DashScope multimodal-embedding-v1 (luyin 视觉召回)" "Embedding" \
-  "{\"base_url\":\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\"api_key\":\"$DASHSCOPE_KEY\",\"provider\":\"aliyun\",\"embedding_parameters\":{\"dimension\":1024}}"
+  "{\"base_url\":\"$DASHSCOPE_BASE\",\"api_key\":\"$DASHSCOPE_KEY\",\"provider\":\"aliyun\",\"embedding_parameters\":{\"dimension\":1024}}"
 
 # ---- 3. 连通性 debug（占位 key 时代：预期上游 401，即配置链路全通）----
 debug_model() { # $1=model name $2=input form field
